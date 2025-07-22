@@ -1,0 +1,11 @@
+python -m venv .venv
+.venv\Scripts\activate
+
+
+
+
+
+docker build -t catdog-classifier:latest .
+
+docker run -p 8000:8000 catdog-classifier:latest
+
